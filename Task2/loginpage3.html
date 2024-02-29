@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login page2</title>
+
+    <style>
+      
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background-color: rgb(22, 17, 17);
+      }
+      html {
+        font-family: sans-serif;
+        font-weight: bolder;
+      }
+
+      .container {
+        background-color: rgb(53, 42, 42);
+        height: 15rem;
+        width: 40%;
+
+        margin: 10rem 18rem;
+
+        border-radius: 0.8rem;
+        animation: animate 2s ease-out 2;
+      }
+
+      @keyframes animate {
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .box {
+        background: transparent;
+        height: 5rem;
+
+        text-align: center;
+      }
+
+      input {
+        font-size: 1.4rem;
+
+        height: 2rem;
+        width: 30rem;
+        margin-top: 2rem;
+        color: white;
+        background: transparent;
+      }
+
+      ::-webkit-input-placeholder {
+        font-size: 1.3rem;
+        color: white;
+      }
+
+      .btn {
+        height: 2rem;
+        width: 8rem;
+        font-size: 1.3rem;
+        background: transparent;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      a:hover {
+        font-size: 1.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box input">
+        <input type="email" placeholder="Email" required />
+      </div>
+
+      <div class="box">
+        <input type="password" placeholder="Password" required />
+      </div>
+
+      <div class="box">
+        <button class="btn"><a href="#nextpage">Login</a></button>
+      </div>
+    </div>
+  </body>
+</html>
